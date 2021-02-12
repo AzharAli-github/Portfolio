@@ -1,3 +1,23 @@
+@media(max-width:700px){
+	html{
+		width: 170%;
+	}
+}
+@media(max-width:436px){
+	html{
+		width:165%;
+	}
+}
+/* @media(max-width:360){
+	html{
+		width: 100%;
+	}
+} */
+@media(max-width:270px){
+	html{
+		width:230%;
+	}
+}
 .alpha{
 	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url(../images/15.jpg);
 }
@@ -107,14 +127,15 @@
 	width: 100%;
 }
 .Second-Section .col {
-	width: 400px;
+	width: 40%;
 }
 .Second-Section .slider-content {
 	text-align: center;
+	margin-top: 150px;
 }
 
 .Second-Section .slider-content p {
-	margin: 20px 0px;
+	margin: 30px 0px;
 	letter-spacing: 1px;
 	padding: 0px 10px;
 	color:aliceblue;
@@ -139,10 +160,10 @@
 	margin:0 auto;
 }
 .container-fluid{
-	background-image: url(../images/homeBg.jpg);
+	background-image: url(../images/homeBg.jpg) ;
+	background-repeat: no-repeat;
     background-position: fixed;
 	height: 100vh;
-	background-repeat: no-repeat;
 }
 .container-fluid .top{
 	text-align: right;
@@ -221,15 +242,13 @@
 /* About me start here  */
 #about-me{
     padding: 100px 0px;
-}#about-me .container{
-	padding: 0px 100px;
 }
 #about-me .row {
 display: flex;
+justify-content: space-around;
 }
 #about-me .col{
 	display: inherit;
-	flex: 1;
 }
 @media(max-width: 600px){
 	.container .row {
@@ -256,6 +275,12 @@ color: red;
 #about-me .container .row .col img{
 	border: 2px solid grey;
 	margin: 4px 23px;
+}
+@media(max-width:600px){
+		.container .row .col img{
+		width:300px;
+		margin-right:30px;
+	}
 }
 /* About me end here  */
 
@@ -311,7 +336,7 @@ color: white;
     text-align: center;
     width: 50%;
 	margin: 0px auto;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 #services-sec .title-content h2{
 	font-size: 30px;
@@ -337,6 +362,9 @@ color: white;
     padding: 10px 0px;
     letter-spacing: 1px;
     text-transform: capitalize;
+}
+#services-sec .container .row .col{
+	margin:0px auto;
 }
 #services-sec .container i{
 	font-size: 30px;
@@ -416,6 +444,11 @@ background-color: #0c0003;
 #Work-section{
 	background-color: #dbdee0;
 }
+@media(max-width:1160px){
+	#Work-section{
+		height: 260vh;
+	}
+}
 #Work-section .container .work{
 	width: 40%;
 	margin: 0px auto;
@@ -456,12 +489,43 @@ border-radius: 20px;
 }
 #Work-section .container .row .col{
 	width: 320px;
-	margin: 10px 15px;
+	margin: 10px auto;
 }
 #Work-section .container .div-image{
 	display: flex;
-	height: 13rem;
+	height: 11rem;
+	width:80%;
+	margin:0px auto;
 }
+#Work-section .container .div-image-2{
+	display: flex;
+	height: 13rem;
+	width:80%;
+	margin:0px auto;
+}
+@media(max-width:1160px){
+	#Work-section .container .div-image{
+		flex-direction: column;
+	}
+}
+@media(max-width:1160px){
+	#Work-section .container .div-image-2{
+		flex-direction: column;
+		margin-top: 530px;
+	}
+}
+    #Work-section .container .div-image .container-2{
+		margin:20px 10px;
+	}
+    #Work-section .container .div-image-2 .container-2{
+		margin:20px 10px;
+	}
+	#Work-section .container .div-image img{
+		width:300px;
+	}
+	#Work-section .container .div-image-2 img{
+		width:300px;
+	}
 .box{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
@@ -581,6 +645,11 @@ border-radius: 20px;
 		background-color: #9aa6a7;
 
 }
+@media(max-width:600px){
+	#Blog-section{
+		margin-top: 300px;
+	}
+}
 #Blog-section .container .Blog{
 	width: 40%;
 	margin: 0px auto;
@@ -619,7 +688,6 @@ border-radius: 20px;
 #Blog-section .container .card a:hover{
 	color:blue;
 }
-#Blog-section 
 @media(max-width: 650px){
 	#Blog-section .container .cards{
 		flex-direction: column;
@@ -645,6 +713,14 @@ border-radius: 20px;
 	width: 80%;
 	justify-content: space-between;
 	margin: 0px auto;
+}
+@media(max-width:650px){
+	#Contact-section .container .contactUs{
+		flex-direction: column;
+	}
+	#Contact-section .container .contactUs div{
+		margin-top: 50px;
+	}
 }
 #Contact-section .container .contactUs h3{
 	padding-bottom: 7px;
@@ -685,4 +761,44 @@ border-radius: 20px;
 }
 #Contact-section .form .lastButton button:hover{
 	background-color:#17036d;
+}
+/* Contact Section Ends Here */
+
+
+/* Footer Section Starts Here */
+#Footer-section{
+	background-color: #242424;
+}
+#Footer-section .row{
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+#Footer-section .row .col{
+	text-align: center;
+}
+#Footer-section .row .col ul{
+	display: flex;
+	width: 25%;
+	margin: 0px auto;
+	padding-top: 50px;
+}
+#Footer-section .row .col ul li{
+list-style-type: none;
+margin: 0px 10px;
+}
+#Footer-section .row .col ul li i{
+	text-decoration: none;
+	font-size: 30px;
+	border: 1px solid #343434;
+	padding: 10px;
+	border-radius: 50%;
+	color: #6c757d;
+	background-color: #343434;
+}
+#Footer-section .para{
+	text-align: center;
+	padding-bottom: 100px;
+}
+#Footer-section .para h3{
+	color: #6c757d;
 }
