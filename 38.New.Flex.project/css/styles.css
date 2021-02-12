@@ -757,9 +757,25 @@ margin: 0px 10px;
 	}
 }
 @media(max-width:600px){
+	#about-me .container .row .col{
+		width: 50%;
+		margin: 0px auto;
+	}
+	#about-me .container .row .col .img-sec{
+		width: 91%;
+		text-align: center;
+		margin-bottom: 59px;
+	}
 		.container .row .col img{
-		width:300px;
-		margin-right:30px;
+		width:353px;
+	}
+	#about-me .container .row .col .about-content{
+		text-align: center;
+	}
+	#about-me .container .row .col .about-content .icons{
+		width: 65%;
+        margin: 0px auto;
+        margin-top: 48px;
 	}
 }
 /* about-me section queries ends here */
@@ -796,19 +812,24 @@ margin: 0px 10px;
 	#Work-section .container .row{
 		flex-direction: column;
 	}
-	#Work-section .container .navbar ul{
+	/* #Work-section .container .navbar ul{
 		flex-direction: column;
 		line-height: 30px;
+	} */
+}
+@media(max-width: 600px){
+	#Work-section{
+		height: 312vh;
 	}
 }
 /* work section media queries ends here */
 
 /* Blog Section starts here */
-@media(max-width:600px){
+/* @media(max-width:600px){
 	#Blog-section{
 		margin-top: 300px;
 	}
-}
+} */
 @media(max-width: 650px){
 	#Blog-section .container .cards{
 		flex-direction: column;
