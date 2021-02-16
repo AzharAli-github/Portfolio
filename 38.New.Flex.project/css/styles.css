@@ -440,12 +440,16 @@ border-radius: 20px;
 	height: 11rem;
 	width:80%;
 	margin:0px auto;
+	justify-content: center;
+	align-items: center;	
 }
 #Work-section .container .div-image-2{
 	display: flex;
 	height: 13rem;
 	width:80%;
 	margin:0px auto;
+	justify-content: center;
+	align-items: center;
 }
     #Work-section .container .div-image .container-2{
 		margin:20px 10px;
@@ -757,23 +761,26 @@ margin: 0px 10px;
 	}
 }
 @media(max-width:600px){
+	#about-me .container{
+    width: 100%;
+    margin: 0 auto;
+    }
 	#about-me .container .row .col{
 		width: 50%;
 		margin: 0px auto;
 	}
 	#about-me .container .row .col .img-sec{
-		width: 91%;
-		text-align: center;
-		margin-bottom: 59px;
+		width: 100%;
+		margin: 0px auto;
 	}
 		.container .row .col img{
-		width:353px;
+		width:inherit;
 	}
 	#about-me .container .row .col .about-content{
 		text-align: center;
 	}
 	#about-me .container .row .col .about-content .icons{
-		width: 65%;
+		width: inherit;
         margin: 0px auto;
         margin-top: 48px;
 	}
@@ -797,6 +804,7 @@ margin: 0px 10px;
 @media(max-width:1160px){
 	#Work-section .container .div-image{
 		flex-direction: column;
+		margin-top: 285px;
 	}
 }
 @media(max-width:1160px){
@@ -812,10 +820,11 @@ margin: 0px 10px;
 	#Work-section .container .row{
 		flex-direction: column;
 	}
-	/* #Work-section .container .navbar ul{
+	#Work-section .container .navbar ul{
 		flex-direction: column;
 		line-height: 30px;
-	} */
+		padding-inline-start: 0px;
+	}
 }
 @media(max-width: 600px){
 	#Work-section{
@@ -848,3 +857,14 @@ margin: 0px 10px;
 	}
 }
 /* Contact Section ends here */
+
+
+/* Footer section starts here */
+@media(max-width:350px){
+	#Footer-section .row .col ul{
+	display: flex;
+	width: 58%;
+	margin: 0px auto;
+	padding-top: 50px;
+}
+}
